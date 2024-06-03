@@ -1,0 +1,49 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display: none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../assets/NunitoSans.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.column-icon {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.01vw;
+    font-family: $font-family;
+}
+
+
+.icon {
+    width: 15vw;
+    height: 15vw;
+    border: #3F3F3F .1vw solid;
+    border-radius: 50vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-icon {
+    font-size: 3vw;
+    font-family: Georgia;
+}

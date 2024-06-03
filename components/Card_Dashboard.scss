@@ -1,0 +1,103 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display: none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.card-dashboard {
+    background-color: #179A48;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 1vw;
+    font-family: Roboto;
+    font-weight: normal;
+    width: 25vw;
+    margin-top: 1vw;
+    color: #FFFFFF;
+
+    .right-card-dashboard{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2vw 1vw;
+        height: 10vw;
+        h1{
+            font-size: 1.5vw;
+            text-transform: uppercase;
+            margin-bottom: -3vw;
+        }
+        h2{
+            font-size: 2.5vw;
+        }
+    }
+    .left-card-dashboard{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2vw 2vw;
+        align-items: flex-end;
+        h1{
+            font-size: 1.5vw;
+        }
+    }
+
+}
+
+
+@media (max-width: 900px) {
+    .card-dashboard {
+        background-color: #179A48;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 1vw;
+        font-family: Roboto;
+        font-weight: normal;
+        width: 80vw;
+        margin-top: 5vw;
+        color: #FFFFFF;
+    
+        .right-card-dashboard{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 3vw 4vw;
+            height: 25vw;
+            h1{
+                font-size: 3.5vw;
+                text-transform: uppercase;
+              
+            }
+            h2{
+                font-size: 7.5vw;
+            }
+        }
+        .left-card-dashboard{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 3vw 4vw;
+            align-items: flex-end;
+            h1{
+                font-size: 3.5vw;
+            }
+        }
+    
+    }
+}

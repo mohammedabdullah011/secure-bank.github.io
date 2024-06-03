@@ -1,0 +1,70 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display:none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.item{
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Roboto;
+    font-weight: normal;
+    width: 30vw;
+    height: 5vw;
+    border-radius: 5vw;
+    padding: 0vw 2vw;
+
+    
+    
+}
+
+.item h1{
+    color: black;
+    font-size: 2vw;
+    font-weight: normal;
+
+}
+
+
+.item h2{
+    color: black;
+    font-size: 1.5vw;
+    font-weight: normal;
+
+}
+
+.item:hover{
+    background-color: #81d39a;
+}
+
+@media (max-width: 900px){
+    .item{
+        width: 50vw;
+        height: 8vw;  
+    }
+
+    .item h1{
+        font-size: 3vw;
+    }
+
+    .item h2{
+        font-size: 2.5vw;
+    }
+}

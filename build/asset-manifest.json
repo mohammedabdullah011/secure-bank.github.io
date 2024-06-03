@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.69eaae88.css",
+    "main.js": "/static/js/main.13f6d78d.js",
+    "static/js/592.58c69c45.chunk.js": "/static/js/592.58c69c45.chunk.js",
+    "static/media/secure-one.jpg": "/static/media/secure-one.e5733e029ff9e60ea71a.jpg",
+    "static/media/safety.jpg": "/static/media/safety.c6e5f06217d0c47ee09d.jpg",
+    "static/media/profile.jpg": "/static/media/profile.541f66193aeaccc1a00c.jpg",
+    "static/media/transactions.jpg": "/static/media/transactions.fd20362610c75e3fdb6e.jpg",
+    "static/media/secure-two.jpg": "/static/media/secure-two.a295101db9e48c8ca287.jpg",
+    "static/media/bottom.jpg": "/static/media/bottom.4c501ff79e7d73c31065.jpg",
+    "static/media/speed.jpg": "/static/media/speed.66794539ddf6d7635615.jpg",
+    "static/media/security.jpg": "/static/media/security.7764b5a3026f06b9006b.jpg",
+    "static/media/easy.jpg": "/static/media/easy.b55bad1018dd259c6e3c.jpg",
+    "static/media/regulation.jpg": "/static/media/regulation.05e65d5d9fba5057066d.jpg",
+    "static/media/finance.jpg": "/static/media/finance.f2ac778d9c32bec36051.jpg",
+    "static/media/NunitoSans.ttf": "/static/media/NunitoSans.61b71ee93d55d9bddead.ttf",
+    "static/media/ssl.jpg": "/static/media/ssl.eac3f54829fca246cd65.jpg",
+    "static/media/Card.svg": "/static/media/Card.eab65da614f42db22730b1ad3fa48f50.svg",
+    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/profile.png": "/static/media/profile.8d5654199a2611454a12.png",
+    "static/media/logo.svg": "/static/media/logo.1538e3eeeb6cb25a9a1e1722fd4802a4.svg",
+    "static/media/Visa.svg": "/static/media/Visa.c81de36921a158d2a5606ec19e285e77.svg",
+    "index.html": "/index.html",
+    "static/media/alert.svg": "/static/media/alert.53c1da01f9ab1da45fb8ee160493e6de.svg",
+    "static/media/Nav.svg": "/static/media/Nav.2fd74c6bc99ba77f091715882ff66b41.svg",
+    "static/media/arrow-left.svg": "/static/media/arrow-left.64a886798e1981faff6f11bd602ac3d1.svg",
+    "main.69eaae88.css.map": "/static/css/main.69eaae88.css.map",
+    "main.13f6d78d.js.map": "/static/js/main.13f6d78d.js.map",
+    "592.58c69c45.chunk.js.map": "/static/js/592.58c69c45.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69eaae88.css",
+    "static/js/main.13f6d78d.js"
+  ]
+}

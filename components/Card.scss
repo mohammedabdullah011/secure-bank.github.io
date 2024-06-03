@@ -1,0 +1,78 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display:none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.card-content{
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Roboto;
+    font-weight: normal;
+    align-items: center;
+    width: 30vw;
+    border: none;
+    
+    //background-color: #05D845;
+    
+    
+}
+
+.card-content h1{
+  font-size: 1.5vw;
+  font-family: Roboto;
+}
+.card-content .img{
+  margin: 1vw 0vw 2vw 0vw;
+  width: 14vw;
+  height: 10vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+ 
+  border: none;
+  border-radius: 0.5vw;
+  
+}
+
+.card-content input{
+  width: 2vw;
+  height: 2vw;
+  border: .1vw #179A48 solid;
+}
+
+
+@media (max-width: 900px) {
+
+
+  .card-content h1{
+    font-size: 3vw;
+    font-family: Roboto;
+  }
+
+  .card-content .img{
+    width: 30vw;
+    height: 20vw;
+  }
+
+  .card-content input{
+    width: 5vw;
+    height: 5vw;
+  }
+}

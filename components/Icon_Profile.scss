@@ -1,0 +1,37 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display: none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+  
+.icon-profile {
+
+    width: 10vw;
+    height: 10vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 0.1vw #179A48 solid;
+    background-position: center;
+
+
+
+    
+
+
+
+}

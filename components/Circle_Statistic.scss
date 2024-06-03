@@ -1,0 +1,36 @@
+$bg-button: #179A48;
+
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+.circle-progress {
+    fill: none;
+    font-family: Roboto;
+}
+
+.circle-background {
+    stroke: #e6e6e6;
+    font-family: Roboto;
+    
+}
+
+.circle-progress {
+
+    transition: stroke-dashoffset 0.5s;
+    font-family: Roboto;
+}
+
+.circle-progress:hover{
+
+    stroke: #333;
+    font-family: Roboto;
+
+}
+text {
+    font-family: Roboto;
+    font-size: 16px;
+    fill: #333;
+}

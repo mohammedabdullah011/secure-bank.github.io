@@ -1,0 +1,72 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display:none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.bottom{
+    background-color: #179A48;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1vw 0vw 4vw 0vw;
+    font-family: Georgia;
+
+}
+
+.p-bottom{
+    color: #FFFFFF;
+    font-size: 1.8vw;
+    padding: 0vw 12vw;
+    text-align: center;
+}
+
+.button-bottom{
+    background-color: #FFFFFF;
+    color: $font-color;
+    width: 20vw;
+    border: none;
+    border-radius: 50vw;
+    height: 3.5vw;
+    font-size: 1.5vw;
+}
+
+.button-bottom:hover{
+    background-color: #179A48;
+    border: #FFFFFF 0.1vw solid;
+    color: #FFFFFF;
+    animation-name: button-bottom;
+    animation-duration: .2s;
+    animation-iteration-count: 2;
+}
+
+.button-bottom:active{
+    background-color: $active-color;
+
+}
+
+@keyframes button-bottom {
+    from { width: 20vw;}
+    to {width: 19.8vw;}
+  }
+
+@media (max-width: 600px){
+    .p-bottom{
+        font-size: 2.2vw;
+    }
+}

@@ -1,0 +1,79 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display:none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.button-all{
+    padding: 0vw 1vw;
+    height: 3.5vw;
+    background-color: #179A48;
+    color: #FFFFFF;
+    font-size: 1.5vw;
+    border-radius: 0.8vw;
+    border: none;
+    font-weight: 100;
+    font-family: Roboto;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 2vw 0vw;
+    min-width: 8vw;
+
+}
+
+.button-all:hover{
+    background-color: #FFFFFF;
+    color: #179A48;
+    font-size: 1.5vw;
+    border-radius: 0.8vw;
+    border: .1vw #179A48 solid;
+
+}
+
+.button-all:active{
+    background-color: #f9ee21;
+}
+
+@media (max-width: 900px) {
+    .button-all{
+        padding: 1vw 2vw;
+        height: 5.5vw;
+        background-color: #179A48;
+        color: #FFFFFF;
+        font-size: 2.5vw;
+        border-radius: 1.2vw;
+        border: none;
+        font-weight: 100;
+        font-family: Roboto;
+        width: -moz-fit-content;
+        width: fit-content;
+        
+        min-width: 8vw;
+    
+    }
+    .button-all:hover{
+        background-color: #FFFFFF;
+        color: #179A48;
+        font-size: 2.5vw;
+        border-radius: 1.2vw;
+        border: .1vw #179A48 solid;
+    
+    }
+    .button-all:active{
+        background-color: #f9ee21;
+
+    }
+}
