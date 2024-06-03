@@ -1,0 +1,270 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display: none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.settings {
+
+    .content {
+        background-color: $bg-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        font-family: Roboto;
+        font-weight: normal;
+        align-items: start;
+        width: 90vw;
+        margin-left: 2vw;
+        margin-top: 2vw;
+        height: 100vh;
+        //background-color: #05D845;
+
+        .right-settings{
+            display: flex;
+            flex-direction: column;
+            margin-right: 5vw;
+
+            .top{
+                display: flex;
+                flex-direction: column;
+
+                h1{
+                    font-size: 1.5vw;
+                    margin-bottom: 1vw;
+                }
+
+                input[type=password] {
+                    margin-bottom: 1vw;
+                    height: 3vw;
+                    border-radius: 0.5vw;
+                    border: 0.1vw #179A48 solid;
+                    padding: 0vw 1vw;
+                    width: 25vw;
+                }
+
+                .row-settings{
+                    display: flex;
+                    flex-direction: row;
+                    width: 25vw;
+                    justify-content: space-between;
+                }
+            }
+
+            .down-settings{
+                margin-top: 5vw;
+                display: flex;
+                flex-direction: column;
+
+                h1{
+                    font-size: 1.5vw;
+                }
+                input[type=tel]{
+                    margin-bottom: 1vw;
+                    height: 3vw;
+                    border-radius: 0.5vw;
+                    border: 0.1vw #179A48 solid;
+                    padding: 0vw 1vw;
+                    width: 25vw;
+                }
+            }
+        }
+        .left-settings{
+        width: 30vw;
+            h1{
+                font-size: 1.5vw;
+            }
+
+            #row{
+                display: flex;
+                flex-direction: row;
+                font-size: 1.1vw;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                #flexSwitchCheckDefault{
+                    margin-left: 2vw;
+                    width: 3vw;
+                    height: 1.5vw;
+                    margin-bottom: 0.5vw;
+                    
+                }
+
+
+
+            }
+            #lang{
+                margin-top: 3.5vw;
+            }
+            select {
+                width: 15vw;
+                height: 3vw;
+                border-radius: 0.5vw;
+                margin-bottom: 18vw;
+                border: .1vw black solid;
+                padding: 0vw 1vw 0vw 1vw;
+                font-size: 1.5vw;
+                font-weight: 100;
+                transition: border-color 0.1s ease;
+    
+                -webkit-appearance: none;
+                /* Remove default arrow in WebKit browsers */
+                -moz-appearance: none;
+                /* Remove default arrow in older versions of Firefox */
+                appearance: none;
+                /* Remove default arrow in Firefox */
+                background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 7h4l-2 3.5L8 7z"/></svg>');
+                /* Custom arrow */
+                background-repeat: no-repeat;
+                background-position: right 10px top 70%;
+            }
+
+        }
+    }
+
+
+}
+
+
+@media (max-width: 900px) {
+    .settings {
+
+        .content {
+            background-color: $bg-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            font-family: Roboto;
+            font-weight: normal;
+            align-items: start;
+            width: 90vw;
+            margin-left: 6vw;
+            margin-top: 2vw;
+
+            //background-color: #05D845;
+    
+            .right-settings{
+                display: flex;
+                flex-direction: column;
+
+                .top{
+                    display: flex;
+                    flex-direction: column;
+    
+                    h1{
+                        font-size: 3vw;
+                        margin-bottom: 1vw;
+                    }
+    
+                    input[type=password] {
+                        margin-bottom: 1vw;
+                        height: 5vw;
+                        border-radius: 1vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 80vw;
+                        font-size: 2.5vw;
+                    }
+    
+                    .row-settings{
+                        display: flex;
+                        flex-direction: row;
+                        width: 40vw;
+                        justify-content: space-between;
+                    }
+                }
+    
+                .down-settings{
+                    margin-top: 5vw;
+                    display: flex;
+                    flex-direction: column;
+    
+                    h1{
+                        font-size: 3vw;
+                    }
+                    input[type=tel]{
+                        margin-bottom: 1vw;
+                        height: 5vw;
+                        font-size: 2.5vw;
+                        border-radius: 1vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 80vw;
+                    }
+                }
+            }
+            .left-settings{
+              
+            
+                h1{
+                    font-size: 3vw;
+                }
+    
+                #row{
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 2.5vw;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+    
+                    #flexSwitchCheckDefault{
+                        margin-left: 4vw;
+                        width: 6vw;
+                        height: 3vw;
+                        margin-bottom: 0.5vw;
+                        
+                    }
+    
+    
+    
+                }
+                #lang{
+                    margin-top: 3.5vw;
+                }
+                select {
+                    width: 40vw;
+                    height: 5vw;
+                    border-radius: 0.5vw;
+                    margin-bottom: 18vw;
+                    border: .1vw black solid;
+                    padding: 0vw 1vw 0vw 1vw;
+                    font-size: 3vw;
+                    font-weight: 100;
+                    transition: border-color 0.1s ease;
+        
+                    -webkit-appearance: none;
+                    /* Remove default arrow in WebKit browsers */
+                    -moz-appearance: none;
+                    /* Remove default arrow in older versions of Firefox */
+                    appearance: none;
+                    /* Remove default arrow in Firefox */
+                    background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 7h4l-2 3.5L8 7z"/></svg>');
+                    /* Custom arrow */
+                    background-repeat: no-repeat;
+                    background-position: right 10px top 70%;
+                }
+    
+            }
+        }
+    
+    
+    }
+    
+}

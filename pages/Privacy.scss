@@ -1,0 +1,67 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display:none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face{
+  font-family: Roboto;
+  src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+
+
+.privacy-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    margin-bottom: 6vh;
+}
+
+.p-privacy{
+    width: 80vw;
+    font-size: 1.5vw;
+    font-family: Georgia;
+    align-items: center;
+    text-align: center;
+}
+.long-line{
+    width: 70%;
+    border-bottom: .3vh dashed #3F3F3F;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    
+}
+
+.small-line{
+    width: 15%;
+    border-bottom: .3vh dashed #3F3F3F;
+    margin: 4vw 0vh;
+    
+}
+
+
+
+@media (max-width: 1000px) {
+    .long-line{
+        border-bottom: .2vh dashed #3F3F3F;
+    }
+    .small-line{
+        border-bottom: .2vh dashed #3F3F3F;
+    }
+    .p-privacy{
+        font-size: 2.1vw;
+    }
+    
+}

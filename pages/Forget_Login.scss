@@ -1,0 +1,263 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display: none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.login-page {
+    background-color: $bg-color;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 100vh;
+    /* Adjust height as needed */
+
+    .content-login-page {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: Roboto;
+        font-weight: normal;
+        width: 90vw;
+        height: 90vh;
+        box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+        /* Add shadow effect */
+
+
+        .right-login-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 45vw;
+
+            .top-login-page {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 10vw;
+                    margin-top: 1vw;
+                }
+
+                h1 {
+                    font-size: 1.7vw;
+                    margin-top: 2vw;
+                }
+
+                .input-login-page {
+                    margin-top: 3vw;
+
+                    h1 {
+                        font-size: 1vw;
+                    }
+
+                    input {
+                        height: 3vw;
+                        border-radius: 0.5vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 30vw;
+                    }
+                }
+
+                .inputtwo-login-page {
+                    margin-top: 1vw;
+
+                    h1 {
+                        font-size: 1vw;
+                    }
+
+                    input {
+                        height: 3vw;
+                        border-radius: 0.5vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 30vw;
+                    }
+
+                    h2 {
+                        font-size: 1vw;
+                        margin-top: 1vw;
+                        color:#179A48 ;
+                    }
+                    Link{
+                        color: #179A48;
+                    }
+                    .handleforgetpassword{
+                        text-decoration:underline;
+                        cursor: pointer;
+                        color: #179A48;
+                    }
+                    .handleforgetpassword:active{
+                        color: #f9ee21;
+                    }
+                }
+
+
+
+            }
+
+            .line-login-page {
+                margin-top: 1vw;
+                width: 25vw;
+                height: .05vw;
+                background-color: black;
+            }
+
+            h1 {
+                font-size: 1.1vw;
+                margin-top: 1vw;
+                margin-bottom: 1vw;
+            }
+            Link{
+                color: #179A48;
+            }
+            .sign-link{
+                color: #179A48;
+            }
+        }
+
+        .left-login-page {
+            width: 45vw;
+            height: 90vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+
+@media (max-width: 900px) {
+    .login-page {
+        background-color: $bg-color;
+        display: flex;
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        height: 100vh;
+        /* Adjust height as needed */
+
+        .content-login-page {
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: Roboto;
+            font-weight: normal;
+            width: 90vw;
+            height: 90vh;
+            box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+            /* Add shadow effect */
+
+
+            .right-login-page {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 90vw;
+
+                .top-login-page {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 30vw;
+
+                    }
+
+                    h1 {
+                        font-size: 3.7vw;
+                        margin-top: 2vw;
+                    }
+
+                    .input-login-page {
+                        margin-top: 3vw;
+
+                        h1 {
+                            font-size: 3vw;
+                        }
+
+                        input {
+                            height: 5.5vw;
+                            border-radius: 1vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 60vw;
+                        }
+                    }
+
+                    .inputtwo-login-page {
+                        margin-top: 1vw;
+
+                        h1 {
+                            font-size: 3vw;
+                        }
+
+                        input {
+                            height: 5.5vw;
+                            border-radius: 1vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 60vw;
+                        }
+
+                        h2 {
+                            font-size: 2.5vw;
+                            margin-top: 1vw;
+                        }
+                    }
+
+
+
+                }
+
+                .line-login-page {
+                    margin-top: 1vw;
+                    width: 50vw;
+                    height: .05vw;
+                    background-color: black;
+                }
+
+                h1 {
+                    font-size: 2.6vw;
+                    margin-top: 2vw;
+                    margin-bottom: 1vw;
+
+                }
+                .sign-link{
+                    font-size: 2.6vw;
+                }
+                
+            }
+            
+
+            .left-login-page {
+                display: none;
+            }
+        }
+    }
+}

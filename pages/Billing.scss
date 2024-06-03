@@ -1,0 +1,163 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display:none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.billing .content{
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Roboto;
+    font-weight: normal;
+    width: 90vw;
+    margin-left: 2vw;
+    //background-color: #05D845;
+    
+    
+}
+
+.billing .content .right{
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-family: Roboto;
+    font-weight: normal;
+    width: 30vw;
+
+    margin-left: 5vw;
+}
+.billing .content .right .top h1{
+    font-size: 1.7vw;
+    color: black;
+
+}
+
+.billing .content .right .top .title{
+    width: 40vw;
+    height: 3.5vw;
+    border-radius: 0.5vw;
+    border: .1vw black solid;
+    padding: 0vw 1vw 0vw 1vw;
+    font-size: 1.5vw;
+    font-weight: 100;
+    transition: border-color 0.1s ease;
+}
+
+.billing .content .right .top .title:focus{
+    border-color:#179A48;
+
+}
+
+.billing .content .right .down{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.billing .content .left{
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+    font-family: Roboto;
+    font-weight: normal;
+
+    height: 100vh;
+
+}
+
+.billing .content .left .message-input{
+    width: 40vw;
+    height: 25vw;
+    border-radius: 0.5vw;
+    padding: 1vw;
+    font-size: 1.2vw;
+}
+
+.billing .content .left h1{
+    font-size: 1.7vw;
+    color: black;
+    margin-top: 1vw;
+}
+
+.billing .content .left .to{
+    width: 40vw;
+    height: 3.5vw;
+    border-radius: 0.5vw;
+    border: .1vw black solid;
+    padding: 0vw 1vw 0vw 1vw;
+    font-size: 1.5vw;
+    font-weight: 100;
+    transition: border-color 0.1s ease;
+}
+
+
+@media (max-width: 900px) {
+    .billing .content{
+        flex-direction: column;
+        
+        
+    }
+    .billing .content .right .top h1{
+        font-size: 4vw;
+        color: black;
+    
+    }
+    
+    .billing .content .right .top .title{
+        width: 50vw;
+        height: 5.5vw;
+        border-radius: 1vw;
+        border: .1vw black solid;
+        padding: 0vw 1vw 0vw 1vw;
+        font-size: 3vw;
+
+    }
+
+    .billing .content .left{
+        margin-left: 5vw;
+        
+        
+    }
+
+    .billing .content .left .message-input{
+        width: 70vw;
+        height: 40vw;
+        border-radius: 1vw;
+        padding: 1vw;
+        font-size: 3vw;
+    }
+    .billing .content .left h1{
+        font-size: 4vw;
+    }
+
+    .billing .content .left .to{
+        width: 50vw;
+        height: 5.5vw;
+        border-radius: 1vw;
+        border: .1vw black solid;
+        padding: 0vw 1vw 0vw 1vw;
+        font-size: 3vw;
+
+    }
+}

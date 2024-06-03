@@ -1,0 +1,194 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display:none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.billing-received .content{
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: Roboto;
+    font-weight: normal;
+    width: 90vw;
+    margin-left: 5vw;
+    //background-color: #05D845;
+    
+    
+}
+
+.billing-received .content .top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:baseline;
+    justify-items: center;
+    width: 90vw;
+    padding: 0vw 2vw;
+    
+}
+
+.billing-received .content .top .first{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.billing-received .content .top .first h1{
+    font-size: 1.5vw;
+    color: black;
+}
+
+.billing-received .content .top .middel{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.billing-received .content .top .middel h1{
+    font-size: 1.5vw;
+    color: black;
+}
+
+.billing-received .content .top .end{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.billing-received .content .top .end h1{
+    font-size: 1.5vw;
+    color: black;
+}
+
+.billing-received .content .top .end button{
+    font-size: 1.5vw;
+    color: white;
+    background-color: #179A48;
+    border-radius: 2vw;
+    width: 10vw;
+    height: 3vw;
+    border: none;
+    
+}
+
+.billing-received .content .middel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin: 1vw 3vw;
+}
+
+.billing-received .content .middel .mid-des{
+    width: 60vw;
+    word-wrap: break-word; /* Wrap long words to next line */
+    white-space: pre-wrap; /* Wrap long lines to next line */
+    font-size: 1.5vw;
+}
+
+.billing-received .content .middel .price{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4vw;
+
+
+}
+
+.billing-received .content .middel .price .h1{
+    font-size: 1.2vw;
+    color: black;
+    
+}
+
+.billing-received .content .middel .price .h2{
+    font-size: 2.5vw;
+    color: black;
+    margin-top: -0.8vw;
+}
+
+.billing-received .content .end{
+    padding: 0vw 0vw 8vw 2vw;
+}
+
+@media (max-width: 900px){
+
+    .billing-received .content .top {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-items:baseline;
+        justify-items: center;
+        width: 90vw;
+        padding: 0vw 2vw;
+        
+    }
+    
+
+    .billing-received .content .top .first h1{
+        font-size: 3vw;
+    }
+
+    .billing-received .content .top .middel h1{
+        font-size: 3vw;
+    }
+
+    .billing-received .content .top .end h1{
+        font-size: 3vw;
+    }
+    .billing-received .content .top .end button {
+        font-size: 3vw;
+        color: white;
+        background-color: #179A48;
+        border-radius: 2vw;
+        width: 20vw;
+        height: 5vw;
+        border: none;
+    }
+
+    .billing-received .content .top .middel h1{
+        font-size: 3vw;
+        color: black;
+    }
+    .billing-received .content .middel {
+        flex-direction: column; 
+    }
+    .billing-received .content .middel p{
+        width: 80vw;
+        font-size: 3vw;
+    }
+
+    .billing-received .content .middel .price .h1{
+        font-size: 3vw;
+    }
+    .billing-received .content .middel .price .h2{
+        font-size: 5vw;
+    }
+    
+}

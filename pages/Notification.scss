@@ -1,0 +1,66 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display:none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+.notification .content{
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0vw 0vw 0vw 7vw;
+    
+}
+
+.notification .content h1{
+    color: #179A48;
+    font-size: 2vw;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: normal;
+}
+
+.notification .content p{
+    width: 70vw;
+}
+
+.notification .content h2{
+    color: #179A48;
+    font-size: 1.5vw;
+    text-align: right;
+    font-family: Roboto;
+    font-weight: normal;
+    padding-right: 25vw;
+}
+
+@media (max-width: 900px){
+    .notification .content p{
+        width: 85vw;
+        font-size: 3vw;
+    }
+    .notification .content h1{
+        font-size: 4vw;
+    }
+    .notification .content h2{
+        font-size: 3vw;
+        padding-right: 12vw;
+    }
+
+
+}

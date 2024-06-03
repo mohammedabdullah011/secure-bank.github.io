@@ -1,0 +1,243 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display: none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.add-card .content-add-card {
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: Roboto;
+    font-weight: normal;
+    align-items: start;
+    width: 90vw;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    //background-color: #05D845;
+
+    .left-add-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 40vw;
+
+        h1 {
+            font-size: 1.5vw;
+        }
+
+        input {
+            height: 3vw;
+            border-radius: 0.5vw;
+            border: 0.1vw #179A48 solid;
+            padding: 0vw 1vw;
+            width: 40vw;
+        }
+    }
+
+
+}
+
+
+.add-card .content-add-card .right-add-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-card .content-add-card .right-add-card .top-add-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vw;
+    margin-bottom: 2vw;
+}
+
+.add-card .content-add-card .right-add-card .down-add-card {
+
+    width: 30vw;
+    margin: 2vw 0vw 0vw 0vw;
+
+    .card-number-add-card {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: 1.5vw;
+            font-family: Roboto;
+
+        }
+
+        .card-number {
+            height: 3vw;
+            border-radius: 0.5vw;
+            border: 0.1vw #179A48 solid;
+            padding: 0vw 1vw;
+            width: 40vw;
+
+
+        }
+
+        .card-number::-webkit-inner-spin-button,
+        .card-number:-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+
+
+    }
+
+    .row-add-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 30vw;
+        margin-top: 3vw;
+        margin-bottom: 10vw;
+
+        .expire {
+
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 1.5vw;
+                font-family: Roboto;
+            }
+
+            input {
+                height: 3vw;
+                border-radius: 0.5vw;
+                border: 0.1vw #179A48 solid;
+                padding: 0vw 1vw;
+                width: 18vw;
+                font-family: Roboto;
+                text-transform:uppercase;
+
+            }
+        }
+
+        .cvc {
+
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 1.5vw;
+                font-family: Roboto;
+            }
+
+            input {
+                height: 3vw;
+                border-radius: 0.5vw;
+                border: 0.1vw #179A48 solid;
+                padding: 0vw 1vw;
+                width: 10vw;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .add-card .content-add-card {
+        flex-direction: column;
+
+        .right-add-card {
+
+            .top-add-card {
+                width: 90vw;
+                margin: 2vw 2vw;
+            }
+
+            .down-add-card {
+
+                .card-number-add-card {
+                    margin: 0vw 6vw;
+
+                    h1 {
+                        font-size: 3vw;
+                    }
+
+                    .card-number {
+                        width: 80vw;
+                        height: 5vw;
+
+                    }
+                }
+
+                .row-add-card {
+                    width: 80vw;
+                    margin: 4vw 6vw;
+
+                    .expire {
+
+
+                        h1 {
+                            font-size: 3vw;
+                        }
+
+                        input {
+                            height: 5vw;
+                            width: 55vw;
+                            font-size: 2.5vw;
+                            text-transform:uppercase;
+                        }
+                    }
+
+                    .cvc {
+
+                        h1 {
+                            font-size: 3vw;
+                        }
+
+                        input {
+                            height: 5vw;
+                            width: 20vw;
+                        }
+
+                    }
+
+                }
+
+
+            }
+
+
+        }
+
+        .left-add-card {
+            margin: 0vw 6vw;
+            width: 80vw;
+
+            h1 {
+                font-size: 3vw;
+            }
+
+            input {
+                height: 5vw;
+                width: 80vw;
+            }
+        }
+    }
+}

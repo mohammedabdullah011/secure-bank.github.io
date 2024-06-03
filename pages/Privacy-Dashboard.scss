@@ -1,0 +1,57 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display:none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face{
+    font-family: Roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+  }
+  
+  * {
+      box-sizing: border-box;
+  
+  }
+.body_pravicy_dashboard{
+    width: 80vw;
+    display: flex;
+    margin: 1vw 0vw 5vw 7vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+p{
+    font-size: 1.3vw;
+    font-family: Roboto;
+    width: 80vw;
+}
+
+.body_pravicy_dashboard h1{
+    font-family: Roboto;
+    color: #179A48;
+    font-size: 1.5vw;
+    font-weight: normal;
+}
+@media (max-width: 1300px){
+    p{
+        font-size: 1.5vw;
+        width: 90vw;
+    }
+   .body_pravicy_dashboard h1{
+        font-size: 1.7vw;
+    }
+}
+@media (max-width: 900px){
+    p{
+        font-size: 3vw;
+        width: 90vw;
+    }
+   .body_pravicy_dashboard h1{
+        font-size: 3.5vw;
+    }
+}

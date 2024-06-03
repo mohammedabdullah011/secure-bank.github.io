@@ -1,0 +1,76 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display:none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face{
+  font-family: Roboto;
+  src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.notFound{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 10vw;
+
+}
+
+
+.numberFound{
+    color: #179A48;
+    font-size: 7vw;
+    font-family: Roboto;
+    text-align: center;
+}
+
+.textFound{
+    font-size: 2vw;
+    font-family: Roboto;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+
+.button-found{
+    font-family: Roboto;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    background-color: #179A48;
+    border: none;
+    width: 10vw;
+    height: 4vw;
+    margin-top: 3vw;
+    margin-left: 1vw;
+}
+
+.button-found:hover{
+    color: #179A48;
+    background-color: #FFFFFF;
+    border: #179A48 .1vw solid;
+    animation-name: button-found;
+    animation-duration: .2s;
+    animation-iteration-count: 2;
+}
+
+.button-found:active{
+    background-color: #f9ee21;
+}
+
+@keyframes button-found {
+    from { width: 10vw;}
+    to {width: 9.8vw;}
+  }

@@ -1,0 +1,438 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display: none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.transactions {
+
+    .content-transactions {
+        background-color: $bg-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        margin-left: 5vw;
+        margin-top: 2vw;
+
+
+        font-family: Roboto;
+        font-weight: normal;
+
+        width: 90vw;
+
+
+        margin-bottom: 10vw;
+
+        .top-transactions {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                font-size: 2vw;
+            }
+
+            .row-transactions {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 18vw;
+            }
+        }
+
+        .status {
+            width: 70vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .status-transactions {
+                width: 12vw;
+                height: 3.5vw;
+                border-radius: 0.5vw;
+                border: .1vw black solid;
+                padding: 0vw 1vw 0vw 2vw;
+                font-size: 1.5vw;
+                font-weight: 100;
+                transition: border-color 0.1s ease;
+
+                -webkit-appearance: none;
+                /* Remove default arrow in WebKit browsers */
+                -moz-appearance: none;
+                /* Remove default arrow in older versions of Firefox */
+                appearance: none;
+                /* Remove default arrow in Firefox */
+                background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 7h4l-2 3.5L8 7z"/></svg>');
+                /* Custom arrow */
+                background-repeat: no-repeat;
+                background-position: right 10px top 50%;
+            }
+
+            .date-transactions {
+                width: 15vw;
+                height: 3.5vw;
+                border-radius: 0.5vw;
+                text-transform: uppercase;
+                border: .1vw black solid;
+                padding: 0vw 1vw 0vw 2vw;
+                font-size: 1.5vw;
+                font-weight: 100;
+                transition: border-color 0.1s ease;
+
+                -webkit-appearance: none;
+                /* Remove default arrow in WebKit browsers */
+                -moz-appearance: none;
+                /* Remove default arrow in older versions of Firefox */
+                appearance: none;
+                /* Remove default arrow in Firefox */
+
+            }
+
+            .from-transactions {
+                width: 17vw;
+                height: 3.5vw;
+                border-radius: 0.5vw;
+                border: .1vw black solid;
+                padding: 0vw 1vw 0vw 2vw;
+                font-size: 1.5vw;
+                font-weight: 100;
+                transition: border-color 0.1s ease;
+
+                -webkit-appearance: none;
+                /* Remove default arrow in WebKit browsers */
+                -moz-appearance: none;
+                /* Remove default arrow in older versions of Firefox */
+                appearance: none;
+                /* Remove default arrow in Firefox */
+
+            }
+
+            .to-transactions {
+                width: 17vw;
+                height: 3.5vw;
+                border-radius: 0.5vw;
+                border: .1vw black solid;
+                padding: 0vw 1vw 0vw 2vw;
+                font-size: 1.5vw;
+                font-weight: 100;
+                transition: border-color 0.1s ease;
+
+                -webkit-appearance: none;
+                /* Remove default arrow in WebKit browsers */
+                -moz-appearance: none;
+                /* Remove default arrow in older versions of Firefox */
+                appearance: none;
+                /* Remove default arrow in Firefox */
+
+            }
+
+            .type-transactions {
+                width: 12vw;
+                height: 3.5vw;
+                border-radius: 0.5vw;
+                border: .1vw black solid;
+                padding: 0vw 1vw 0vw 2vw;
+                font-size: 1.5vw;
+                font-weight: 100;
+                transition: border-color 0.1s ease;
+
+                -webkit-appearance: none;
+                /* Remove default arrow in WebKit browsers */
+                -moz-appearance: none;
+                /* Remove default arrow in older versions of Firefox */
+                appearance: none;
+                /* Remove default arrow in Firefox */
+                background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 7h4l-2 3.5L8 7z"/></svg>');
+                /* Custom arrow */
+                background-repeat: no-repeat;
+                background-position: right 10px top 50%;
+            }
+
+        }
+
+        .table-transactions {
+            font-family: Roboto;
+            font-weight: normal;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5vw;
+
+            width: 90vw;
+
+
+            table {
+                width: 100%;
+                border-collapse: none;
+                font-family: Roboto;
+                font-weight: normal;
+
+
+
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+
+                th {
+                    font-size: 2vw;
+                    font-weight: normal;
+                    color: #179A48;
+                }
+
+                td {
+                    font-weight: 500;
+                    font-size: 1.1vw;
+
+                    color: black;
+                    text-decoration: none;
+
+
+                }
+
+                th,
+                td {
+                    border: none;
+                    padding: 8px;
+                    text-align: left;
+                    color: black;
+                    text-decoration: none;
+                }
+
+                th {
+                    background-color: #ffffff;
+                    color:black;
+                    text-decoration: none;
+                }
+
+                tr:hover {
+                    background-color: #c7e7d1; // Change background color on hover
+                    cursor: pointer; // Change cursor on hover
+                }
+            }
+        }
+
+    }
+
+}
+
+
+@media (max-width: 900px) {
+    .transactions {
+
+        .content-transactions {
+            background-color: $bg-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-left: 5vw;
+            margin-top: 2vw;
+
+
+            font-family: Roboto;
+            font-weight: normal;
+
+            width: 90vw;
+
+
+            margin-bottom: 10vw;
+
+            .top-transactions {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                h1 {
+                    font-size: 4vw;
+                }
+
+                .row-transactions {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 37vw;
+                }
+            }
+
+            .status {
+                width: 90vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 4vw;
+
+                .status-transactions {
+                    width: 15vw;
+                    height: 5.5vw;
+                    border-radius: 1vw;
+                    border: .1vw black solid;
+                    padding: 0vw 1vw 0vw 2vw;
+                    font-size: 2.5vw;
+                    font-weight: 100;
+                    transition: border-color 0.1s ease;
+
+                    -webkit-appearance: none;
+                    /* Remove default arrow in WebKit browsers */
+                    -moz-appearance: none;
+                    /* Remove default arrow in older versions of Firefox */
+                    appearance: none;
+                    /* Remove default arrow in Firefox */
+                    background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 7h4l-2 3.5L8 7z"/></svg>');
+                    /* Custom arrow */
+                    background-repeat: no-repeat;
+                    background-position: right 5px top 50%;
+                }
+
+                .date-transactions {
+                    width: 23vw;
+                    height: 5.5vw;
+                    border-radius: 1vw;
+                    text-transform: uppercase;
+                    border: .1vw black solid;
+                    padding: 0vw 1vw 0vw 2vw;
+                    font-size: 2.5vw;
+                    font-weight: 100;
+                    transition: border-color 0.1s ease;
+
+                    -webkit-appearance: none;
+                    /* Remove default arrow in WebKit browsers */
+                    -moz-appearance: none;
+                    /* Remove default arrow in older versions of Firefox */
+                    appearance: none;
+                    /* Remove default arrow in Firefox */
+
+                }
+
+                .from-transactions {
+                    width: 15vw;
+                    height: 5.5vw;
+                    border-radius: 1vw;
+                    border: .1vw black solid;
+                    padding: 0vw 1vw 0vw 2vw;
+                    font-size: 2.5vw;
+                    font-weight: 100;
+                    transition: border-color 0.1s ease;
+
+                    -webkit-appearance: none;
+                    /* Remove default arrow in WebKit browsers */
+                    -moz-appearance: none;
+                    /* Remove default arrow in older versions of Firefox */
+                    appearance: none;
+                    /* Remove default arrow in Firefox */
+
+                }
+
+                .to-transactions {
+                    width: 15vw;
+                    height: 5.5vw;
+                    border-radius: 1vw;
+                    border: .1vw black solid;
+                    padding: 0vw 1vw 0vw 2vw;
+                    font-size: 2.5vw;
+                    font-weight: 100;
+                    transition: border-color 0.1s ease;
+
+                    -webkit-appearance: none;
+                    /* Remove default arrow in WebKit browsers */
+                    -moz-appearance: none;
+                    /* Remove default arrow in older versions of Firefox */
+                    appearance: none;
+                    /* Remove default arrow in Firefox */
+
+                }
+
+                .type-transactions {
+                    width: 20vw;
+                    height: 5.5vw;
+                    border-radius: 1vw;
+                    border: .1vw black solid;
+                    padding: 0vw 1vw 0vw 2vw;
+                    font-size: 2.5vw;
+                    font-weight: 100;
+                    transition: border-color 0.1s ease;
+
+                    -webkit-appearance: none;
+                    /* Remove default arrow in WebKit browsers */
+                    -moz-appearance: none;
+                    /* Remove default arrow in older versions of Firefox */
+                    appearance: none;
+                    /* Remove default arrow in Firefox */
+                    background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 7h4l-2 3.5L8 7z"/></svg>');
+                    /* Custom arrow */
+                    background-repeat: no-repeat;
+                    background-position: right 10px top 50%;
+                }
+
+            }
+
+            .table-transactions {
+                font-family: Roboto;
+                font-weight: normal;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5vw;
+
+                width: 90vw;
+
+
+                table {
+                    width: 100%;
+                    table-layout: auto;
+                    border-collapse: none;
+                    font-family: Roboto;
+                    font-weight: normal;
+
+                    th {
+                        font-size: 3vw;
+                        font-weight: normal;
+                        color: #179A48;
+                    }
+
+                    td {
+                        font-weight: 500;
+                        font-size: 2.0vw;
+                    }
+
+                    th,
+                    td {
+                        border: none;
+                        padding: 8px;
+                        text-align: left;
+                    }
+
+                    th {
+                        background-color: #ffffff;
+                    }
+
+                    tr:hover {
+                        background-color: #c7e7d1; // Change background color on hover
+                        cursor: pointer; // Change cursor on hover
+                    }
+                }
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,464 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display: none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.edit-profile {
+
+    .content {
+        background-color: $bg-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        font-family: Roboto;
+        font-weight: normal;
+        align-items: start;
+        width: 90vw;
+        margin-left: 2vw;
+        margin-top: 2vw;
+        height: 100vh;
+
+        .right-edit {
+
+            display: flex;
+            flex-direction: column;
+            border-bottom: none;
+            justify-content: center;
+            align-items: center;
+
+
+            .row-edit-profile {
+                margin-top: 3vw;
+                display: flex;
+                flex-direction: row;
+                width: 32vw;
+                justify-content: space-between;
+                
+
+                .right-right {
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 1.5vw;
+                    justify-content: flex-start;
+
+                    h1 {
+                        font-size: 1.5vw;
+
+                    }
+
+                    input {
+                        height: 3vw;
+                        border-radius: 0.5vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 15vw;
+
+                    }
+                }
+
+                .left {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+
+                    h1 {
+                        font-size: 1.5vw;
+
+                    }
+
+                    input {
+                        height: 3vw;
+                        border-radius: 0.5vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 15vw;
+
+                    }
+                }
+            }
+
+            .mid {
+                margin-top: 3vw;
+
+
+                h1 {
+                    font-size: 1.5vw;
+
+                }
+
+                input {
+                    height: 3vw;
+                    border-radius: 0.5vw;
+                    border: 0.1vw #179A48 solid;
+                    padding: 0vw 1vw;
+                    width: 32vw;
+                }
+            }
+
+            .end-edit {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 3vw;
+                width: 32vw;
+
+                .first {
+
+                    h1 {
+                        font-size: 1.5vw;
+
+                    }
+
+                    input {
+                        height: 3vw;
+                        border-radius: 0.5vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 10vw;
+                    }
+                }
+
+                .second {
+
+                    h1 {
+                        font-size: 1.5vw;
+
+                    }
+
+                    input {
+                        height: 3vw;
+                        border-radius: 0.5vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 10vw;
+                    }
+                }
+
+                .third {
+
+                    h1 {
+                        font-size: 1.5vw;
+
+                    }
+
+                    input {
+                        height: 3vw;
+                        border-radius: 0.5vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 10vw;
+                    }
+                }
+            }
+        }
+
+        .left-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 32vw;
+            margin: 1vw 0vw 0vw 10vw;
+            
+
+            .top {
+                h1 {
+                    font-size: 1.5vw;
+                }
+
+                input {
+                    height: 3vw;
+                    border-radius: 0.5vw;
+                    border: 0.1vw #179A48 solid;
+                    padding: 0vw 1vw;
+                    width: 10vw;
+                }
+            }
+
+            .mid-edit {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 3vw;
+                width: 32vw;
+
+
+                h1 {
+                    font-size: 1.5vw;
+                }
+
+                input {
+                    height: 3vw;
+                    border-radius: 0.5vw;
+                    border: 0.1vw #179A48 solid;
+                    padding: 0vw 1vw;
+                    width: 9.5vw;
+                    margin-right: 1vw;
+                }
+            }
+
+            .end {
+                margin-top: 3vw;
+                h1 {
+                    font-size: 1.5vw;
+                }
+
+                input {
+                    height: 3vw;
+                    border-radius: 0.5vw;
+                    border: 0.1vw #179A48 solid;
+                    padding: 0vw 1vw;
+                    width: 32vw;
+                }
+            }
+            .button-end{
+                display: flex;
+                flex-direction: row;
+                width: 17vw;
+                justify-content: space-between;
+            }
+        }
+
+
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .edit-profile {
+
+        .content {
+            background-color: $bg-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+            flex-wrap: nowrap;
+            font-family: Roboto;
+            font-weight: normal;
+
+            width: 90vw;
+            margin-left: 2vw;
+            margin-top: 2vw;
+            height: 100vh;
+    
+            .right-edit {
+    
+                display: flex;
+                flex-direction: column;
+                border-bottom: none;
+                justify-content: center;
+                align-items: center;
+    
+    
+                .row-edit-profile {
+                    margin-top: 3vw;
+                    display: flex;
+                    flex-direction: row;
+                    width: 90vw;
+                    justify-content: space-between;
+                    
+    
+                    .right-right {
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 1.5vw;
+                        justify-content: flex-start;
+    
+                        h1 {
+                            font-size: 3vw;
+    
+                        }
+    
+                        input {
+                            height: 5vw;
+                            border-radius: 1vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 40vw;
+    
+                        }
+                    }
+    
+                    .left {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+    
+                        h1 {
+                            font-size: 3vw;
+    
+                        }
+    
+                        input {
+                            height: 5vw;
+                            border-radius: 1vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 40vw;
+    
+                        }
+                    }
+                }
+    
+                .mid {
+                    margin-top: 3vw;
+    
+    
+                    h1 {
+                        font-size: 3vw;
+    
+                    }
+    
+                    input {
+                        height: 5vw;
+                        border-radius: 1vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 90vw;
+                    }
+                }
+    
+                .end-edit {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-top: 3vw;
+                    width: 90vw;
+    
+                    .first {
+    
+                        h1 {
+                            font-size: 3vw;
+    
+                        }
+    
+                        input {
+                            height: 5vw;
+                            border-radius: 1vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 25vw;
+                        }
+                    }
+    
+                    .second {
+    
+                        h1 {
+                            font-size: 3vw;
+    
+                        }
+    
+                        input {
+                            height: 5vw;
+                            border-radius: 1vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 25vw;
+                        }
+                    }
+    
+                    .third {
+    
+                        h1 {
+                            font-size: 3vw;
+    
+                        }
+    
+                        input {
+                            height: 5vw;
+                            border-radius: 1vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 25vw;
+                        }
+                    }
+                }
+            }
+    
+            .left-left {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 90vw;
+                margin: 0vw 0vw 0vw 0vw;
+                
+    
+                .top {
+                    h1 {
+                        font-size: 3vw;
+                    }
+    
+                    input {
+                        height: 5vw;
+                        border-radius: 1vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 25vw;
+                    }
+                }
+    
+                .mid-edit {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-top: 3vw;
+                    width: 90vw;
+    
+    
+                    h1 {
+                        font-size: 3vw;
+                    }
+    
+                    input {
+                        height: 5vw;
+                        border-radius: 1vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 25vw;
+                        margin-right: 1vw;
+                    }
+                }
+    
+                .end {
+                    margin-top: 3vw;
+                    h1 {
+                        font-size: 3vw;
+                    }
+    
+                    input {
+                        height: 5vw;
+                        border-radius: 1vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 90vw;
+                    }
+                }
+                .button-end{
+                    display: flex;
+                    flex-direction: row;
+                    width: 25vw;
+                    justify-content: space-between;
+                }
+            }
+    
+    
+        }
+    }
+    
+}

@@ -1,0 +1,691 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display: none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.sign-page {
+    background-color: $bg-color;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 100vh;
+    /* Adjust height as needed */
+
+    .cont-sign-page {
+        background-color: white;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: Roboto;
+        font-weight: normal;
+        width: 90vw;
+        height: 90vh;
+        box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+
+        /* Add shadow effect */
+
+        .right-sign-page{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 45vw;
+
+            .top-sign-page{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 10vw;
+                    margin-bottom: 2vw;
+                }
+                h1{
+                    font-size: 2vw;
+                }
+                h2{
+                    font-size: 1.5vw;
+                }
+
+            }
+            .mid-sign-page{
+                display: flex;
+                flex-direction: row;
+                width: 32vw;
+                margin-top: 2vw;
+                .right-sign-page{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    h1{
+                        font-size: 1.5vw;
+                    }
+                    input{
+                        height: 3vw;
+                        border-radius: 0.5vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 15vw;
+                    }
+                }
+
+                .left-sign-page{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    margin-left: 2vw;
+                    h1{
+                        font-size: 1.5vw;
+                    }
+                    input{
+                        height: 3vw;
+                        border-radius: 0.5vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 15vw;
+                    }
+                }
+            }
+            .input-sign-page{
+                margin-top: 2vw;
+                h1{
+                    font-size: 1.5vw;
+                }
+                input{
+                    height: 3vw;
+                    border-radius: 0.5vw;
+                    border: 0.1vw #179A48 solid;
+                    padding: 0vw 1vw;
+                    width: 32vw;
+                }
+            }
+            .inputtwo-sign-page{
+                margin-top: 2vw;
+                h1{
+                    font-size: 1.5vw;
+                }
+                input{
+                    height: 3vw;
+                    border-radius: 0.5vw;
+                    border: 0.1vw #179A48 solid;
+                    padding: 0vw 1vw;
+                    width: 32vw;
+                }
+            }
+        }
+        .left-sign-page{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 45vw;
+
+            .top-left-sign-page{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                width: 32vw;
+                margin-bottom: 2vw;
+                .first-sign-page{
+                    h1{
+                        font-size: 1.5vw;
+                    }
+                    input{
+                        height: 3vw;
+                        border-radius: 0.5vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 32vw;
+                    }
+                }
+                .second-sign-page{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 32vw;
+                    margin-top: 2vw;
+                    .secondf-sign-page{
+                        h1{
+                            font-size: 1.5vw;
+                        }
+                        input{
+                            height: 3vw;
+                            border-radius: 0.5vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 15vw;
+                        }
+                    }
+                    .seconds-sign-page{
+                        h1{
+                            font-size: 1.5vw;
+                        }
+                        input{
+                            height: 3vw;
+                            border-radius: 0.5vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 15vw;
+                        }
+                    }
+                }
+                .third-sign-page{
+                    margin-top: 2vw;
+                    h1{
+                        font-size: 1.5vw;
+                    }
+                    input{
+                        height: 3vw;
+                        border-radius: 0.5vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 15vw;
+                    }
+                }
+                .fourth-sign-page{
+                    margin-top: 2vw;
+                    h1{
+                        font-size: 1.5vw;
+                    }
+                    input{
+                        height: 3vw;
+                        border-radius: 0.5vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 32vw;
+                    }
+                }
+            }
+            .line-line-line-sign{
+                margin-top: 1vw;
+                width: 30vw;
+                height: .05vw;
+                background-color: black;
+                margin-bottom: 2vw;
+            }
+            .have{
+                font-size: 1.5vw;
+                margin-top: -1vw;
+                
+                color: #179A48;
+            }
+
+        }
+
+
+    }
+}
+
+
+@media (max-width: 900px) {
+    .sign-page {
+        background-color: $bg-color;
+        display: flex;
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        height: 100vh;
+        /* Adjust height as needed */
+    
+        .cont-sign-page {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: nowrap;
+            align-items: center;
+            font-family: Roboto;
+            font-weight: normal;
+            width: 90vw;
+            height: 200vh;
+            box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+            
+    
+            /* Add shadow effect */
+    
+            .right-sign-page{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 45vw;
+                
+    
+                .top-sign-page{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 10vw;
+                    img{
+                        width: 20vw;
+                        margin-bottom: 2vw;
+                        margin-top: 30vw;
+                    }
+                    h1{
+                        font-size: 4vw;
+                    }
+                    h2{
+                        font-size: 2.5vw;
+                    }
+    
+                }
+                .mid-sign-page{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 60vw;
+                    margin-top: 2vw;
+                    .right-sign-page{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        h1{
+                            font-size: 2.5vw;
+                        }
+                        input{
+                            height: 5.5vw;
+                            border-radius: 1vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 28vw;
+                        }
+                    }
+    
+                    .left-sign-page{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        margin-left: 4vw;
+                        margin-bottom: 2vw;
+                        h1{
+                            font-size: 2.5vw;
+                        }
+                        input{
+                            height: 5.5vw;
+                            border-radius: 1vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 28vw;
+                        }
+                    }
+                }
+                .input-sign-page{
+                    margin-top: 2vw;
+                    h1{
+                        font-size: 2.5vw;
+                    }
+                    input{
+                        height: 5.5vw;
+                        border-radius: 1vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 60vw;
+                    }
+                }
+                .inputtwo-sign-page{
+                    margin-top: 2vw;
+                    h1{
+                        font-size: 2.5vw;
+                    }
+                    input{
+                        height: 5.5vw;
+                        border-radius: 1vw;
+                        border: 0.1vw #179A48 solid;
+                        padding: 0vw 1vw;
+                        width: 60vw;
+                    }
+                }
+            }
+            .left-sign-page{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 45vw;
+                margin-top: 2vw;
+                .top-left-sign-page{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    width: 60vw;
+                    margin-bottom: 2vw;
+                    .first-sign-page{
+                        h1{
+                            font-size: 2.5vw;
+                        }
+                        input{
+                            height: 5.5vw;
+                            border-radius: 1vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 60vw;
+                        }
+                    }
+                    .second-sign-page{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 60vw;
+                        margin-top: 2vw;
+                        .secondf-sign-page{
+                            h1{
+                                font-size: 2.5vw;
+                            }
+                            input{
+                                height: 5.5vw;
+                                border-radius: 1vw;
+                                border: 0.1vw #179A48 solid;
+                                padding: 0vw 1vw;
+                                width: 28vw;
+                            }
+                        }
+                        .seconds-sign-page{
+                            h1{
+                                font-size: 2.5vw;
+                            }
+                            input{
+                                height: 5.5vw;
+                                border-radius: 1vw;
+                                border: 0.1vw #179A48 solid;
+                                padding: 0vw 1vw;
+                                width: 28vw;
+                            }
+                        }
+                    }
+                    .third-sign-page{
+                        margin-top: 2vw;
+                        h1{
+                            font-size: 2.5vw;
+                        }
+                        input{
+                            height: 5.5vw;
+                            border-radius: 1vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 60vw;
+                        }
+                    }
+                    .fourth-sign-page{
+                        margin-top: 2vw;
+                        h1{
+                            font-size: 2.5vw;
+                        }
+                        input{
+                            height: 5.5vw;
+                            border-radius: 1vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 60vw;
+                        }
+                    }
+                }
+                .line-line-line-sign{
+                    margin-top: 1vw;
+                    width: 30vw;
+                    height: .05vw;
+                    background-color: black;
+                    margin-bottom: 2vw;
+                }
+                .have{
+                    font-size: 2.5vw;
+                    margin-top: 0vw;
+                    
+                    color: #179A48;
+                }
+
+    
+            }
+    
+    
+        }
+    }
+    
+}
+
+
+@media (max-width: 500px) {
+
+        .sign-page {
+            background-color: $bg-color;
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+            height: 100vh;
+            /* Adjust height as needed */
+        
+            .cont-sign-page {
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: nowrap;
+                align-items: center;
+                font-family: Roboto;
+                font-weight: normal;
+                width: 90vw;
+                height: 120vh;
+                box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+                
+        
+                /* Add shadow effect */
+        
+                .right-sign-page{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 45vw;
+                    margin-top: -30vw;
+                    
+        
+                    .top-sign-page{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        img{
+                            width: 20vw;
+                            margin-bottom: 2vw;
+   
+                        }
+                        h1{
+                            font-size: 4vw;
+                        }
+                        h2{
+                            font-size: 2.5vw;
+                        }
+        
+                    }
+                    .mid-sign-page{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 60vw;
+                        margin-top: 2vw;
+                        .right-sign-page{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            margin-top: 0vw;
+                            h1{
+                                font-size: 2.5vw;
+                            }
+                            input{
+                                height: 5.5vw;
+                                border-radius: 1vw;
+                                border: 0.1vw #179A48 solid;
+                                padding: 0vw 1vw;
+                                width: 28vw;
+                            }
+                        }
+        
+                        .left-sign-page{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            margin-left: 4vw;
+                            margin-bottom: 2vw;
+                            h1{
+                                font-size: 2.5vw;
+                            }
+                            input{
+                                height: 5.5vw;
+                                border-radius: 1vw;
+                                border: 0.1vw #179A48 solid;
+                                padding: 0vw 1vw;
+                                width: 28vw;
+                            }
+                        }
+                    }
+                    .input-sign-page{
+                        margin-top: 2vw;
+                        h1{
+                            font-size: 2.5vw;
+                        }
+                        input{
+                            height: 5.5vw;
+                            border-radius: 1vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 60vw;
+                        }
+                    }
+                    .inputtwo-sign-page{
+                        margin-top: 2vw;
+                        h1{
+                            font-size: 2.5vw;
+                        }
+                        input{
+                            height: 5.5vw;
+                            border-radius: 1vw;
+                            border: 0.1vw #179A48 solid;
+                            padding: 0vw 1vw;
+                            width: 60vw;
+                        }
+                    }
+                }
+                .left-sign-page{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 45vw;
+                    margin-top: 2vw;
+                    .top-left-sign-page{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        width: 60vw;
+                        margin-bottom: 2vw;
+                        .first-sign-page{
+                            h1{
+                                font-size: 2.5vw;
+                            }
+                            input{
+                                height: 5.5vw;
+                                border-radius: 1vw;
+                                border: 0.1vw #179A48 solid;
+                                padding: 0vw 1vw;
+                                width: 60vw;
+                            }
+                        }
+                        .second-sign-page{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            width: 60vw;
+                            margin-top: 2vw;
+                            .secondf-sign-page{
+                                h1{
+                                    font-size: 2.5vw;
+                                }
+                                input{
+                                    height: 5.5vw;
+                                    border-radius: 1vw;
+                                    border: 0.1vw #179A48 solid;
+                                    padding: 0vw 1vw;
+                                    width: 28vw;
+                                }
+                            }
+                            .seconds-sign-page{
+                                h1{
+                                    font-size: 2.5vw;
+                                }
+                                input{
+                                    height: 5.5vw;
+                                    border-radius: 1vw;
+                                    border: 0.1vw #179A48 solid;
+                                    padding: 0vw 1vw;
+                                    width: 28vw;
+                                }
+                            }
+                        }
+                        .third-sign-page{
+                            margin-top: 2vw;
+                            h1{
+                                font-size: 2.5vw;
+                            }
+                            input{
+                                height: 5.5vw;
+                                border-radius: 1vw;
+                                border: 0.1vw #179A48 solid;
+                                padding: 0vw 1vw;
+                                width: 60vw;
+                            }
+                        }
+                        .fourth-sign-page{
+                            margin-top: 2vw;
+                            h1{
+                                font-size: 2.5vw;
+                            }
+                            input{
+                                height: 5.5vw;
+                                border-radius: 1vw;
+                                border: 0.1vw #179A48 solid;
+                                padding: 0vw 1vw;
+                                width: 60vw;
+                            }
+                        }
+                    }
+        
+                }
+        
+        
+            }
+        }
+        
+    }

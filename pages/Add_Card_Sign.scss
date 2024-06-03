@@ -1,0 +1,269 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display: none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+.add-card-sign{
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    font-weight: normal;
+    align-items: center;
+    .id{
+        font-size: 2.5vw;
+        margin: 3vw 0vw 4vw 0vw;
+        font-family: Roboto;
+        font-weight: normal;
+    }
+    
+}
+
+.add-card-sign .content-add-card-sign {
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: Roboto;
+    font-weight: normal;
+    align-items: start;
+    width: 90vw;
+    margin-left: 0vw;
+    margin-top: 2vw;
+    //background-color: #05D845;
+
+    .left-add-card-sign {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 40vw;
+
+        h1 {
+            font-size: 1.5vw;
+        }
+
+        input {
+            height: 3vw;
+            border-radius: 0.5vw;
+            border: 0.1vw #179A48 solid;
+            padding: 0vw 1vw;
+            width: 40vw;
+        }
+    }
+
+
+}
+
+
+.add-card-sign .content-add-card-sign .right-add-card-sign {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-card-sign .content-add-card-sign .right-add-card-sign .top-add-card-sign {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vw;
+    margin-bottom: 2vw;
+}
+
+.add-card-sign .content-add-card-sign .right-add-card-sign .down-add-card-sign {
+
+    width: 30vw;
+    margin: 2vw 0vw 0vw 0vw;
+
+    .card-number-add-card-sign {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: 1.5vw;
+            font-family: Roboto;
+
+        }
+
+        .card-number {
+            height: 3vw;
+            border-radius: 0.5vw;
+            border: 0.1vw #179A48 solid;
+            padding: 0vw 1vw;
+            width: 40vw;
+
+
+        }
+
+        .card-number::-webkit-inner-spin-button,
+        .card-number:-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+
+
+    }
+
+    .row-add-card-sign {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 30vw;
+        margin-top: 3vw;
+        margin-bottom: 10vw;
+
+        .expire {
+
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 1.5vw;
+                font-family: Roboto;
+            }
+
+            input {
+                height: 3vw;
+                border-radius: 0.5vw;
+                border: 0.1vw #179A48 solid;
+                padding: 0vw 1vw;
+                width: 18vw;
+                font-family: Roboto;
+                text-transform:uppercase;
+
+            }
+        }
+
+        .cvc {
+
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 1.5vw;
+                font-family: Roboto;
+            }
+
+            input {
+                height: 3vw;
+                border-radius: 0.5vw;
+                border: 0.1vw #179A48 solid;
+                padding: 0vw 1vw;
+                width: 10vw;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+    .add-card-sign{
+        .id{
+            font-size: 5vw;
+        }
+    }
+    .add-card-sign .content-add-card-sign {
+        flex-direction: column;
+
+        .right-add-card-sign {
+
+            .top-add-card-sign {
+                width: 90vw;
+                margin: 2vw 2vw;
+            }
+
+            .down-add-card-sign {
+
+                .card-number-add-card-sign {
+                    margin: 0vw 6vw;
+
+                    h1 {
+                        font-size: 3vw;
+                    }
+
+                    .card-number {
+                        width: 80vw;
+                        height: 5vw;
+                        border-radius: 1vw;
+
+                    }
+                }
+
+                .row-add-card-sign {
+                    width: 80vw;
+                    margin: 4vw 6vw;
+
+                    .expire {
+
+
+                        h1 {
+                            font-size: 3vw;
+                        }
+
+                        input {
+                            height: 5vw;
+                            width: 55vw;
+                            border-radius: 1vw;
+                            font-size: 2.5vw;
+                            text-transform:uppercase;
+                        }
+                    }
+
+                    .cvc {
+
+                        h1 {
+                            font-size: 3vw;
+                        }
+
+                        input {
+                            height: 5vw;
+                            width: 20vw;
+                            border-radius: 1vw;
+                        }
+
+                    }
+
+                }
+
+
+            }
+
+
+        }
+
+        .left-add-card-sign {
+            margin: 0vw 6vw;
+            width: 80vw;
+
+            h1 {
+                font-size: 3vw;
+            }
+
+            input {
+                height: 5vw;
+                width: 80vw;
+                border-radius: 1vw;
+            }
+        }
+    }
+}

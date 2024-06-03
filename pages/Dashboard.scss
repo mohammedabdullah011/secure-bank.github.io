@@ -1,0 +1,341 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display: none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.dashboard {
+
+
+    .content-dashboard {
+        background-color: white;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+
+        font-family: Roboto;
+        font-weight: normal;
+        width: 90vw;
+        margin-top: 5vw;
+
+        .right-dashboard {
+            display: flex;
+            flex-direction: row;
+            width: 80vw;
+            justify-content: space-between;
+            margin-left: 7vw;
+
+            .top-dashboard {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: 7vw;
+
+                h3 {
+                    font-size: 1vw;
+                    margin-top: 2vw;
+                }
+
+                h1 {
+                    font-size: 3vw;
+                    margin-bottom: -1vw;
+                }
+            }
+
+            .down-dashboard {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                width: 50vw;
+
+                align-items: flex-start;
+
+                .right-dashboard {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+
+
+                    h1 {
+                        font-size: 2.5vw;
+                    }
+
+                    h3 {
+                        font-size: 1.5vw;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        margin-top: -0.5vw;
+                        margin-bottom: -0.5vw;
+                    }
+                }
+
+                .left-dashboard {
+                    margin-top: 0vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+
+                    h1,
+                    h2,
+                    h3 {
+                        font-size: 1.5vw;
+                    }
+
+                }
+            }
+
+        }
+
+        .left-dashboard {
+            width: 50vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-left: 3vw;
+            margin-bottom: 5vw;
+            margin-top: 10vw;
+            .top-left-dashboard {
+
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 5vw;
+
+                h1 {
+                    font-size: 2vw;
+                }
+            }
+
+            .down-left-dashboard {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+
+                .left-down-left-dashboard {
+                    display: flex;
+                    flex-direction: column;
+
+                    align-items: center;
+                    margin-left: 2vw;
+
+                    .top {
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        h1 {
+                            font-size: 2.5vw;
+                        }
+
+                        h2 {
+                            font-size: 1vw;
+                        }
+                    }
+
+                    .mid {
+                        margin-top: 2vw;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 28vw;
+
+                        .first,
+                        .second,
+                        .third {
+
+                            h1,
+                            h2 {
+                                font-size: 1.5vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 900px) {
+    .dashboard {
+
+
+        .content-dashboard {
+            background-color: white;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            font-family: Roboto;
+            font-weight: normal;
+            width: 90vw;
+            margin-top: 5vw;
+    
+            .right-dashboard {
+                display: flex;
+                flex-direction: column;
+                width: 80vw;
+                justify-content: space-between;
+                margin-left: 7vw;
+    
+                .top-dashboard {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 7vw;
+    
+                    h3 {
+                        font-size: 3vw;
+                        margin-top: 2vw;
+                    }
+    
+                    h1 {
+                        font-size: 5vw;
+                        margin-bottom: -1vw;
+                    }
+                }
+    
+                .down-dashboard {
+                    display: flex;
+                    flex-direction: row;
+                    width: 90vw;
+                    flex-wrap: nowrap;
+                    margin-top: 3vw;
+                    margin-left: -4vw;
+                    justify-content: center;
+    
+                    .right-dashboard {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        margin-right: -5vw;
+    
+    
+                        h1 {
+                            font-size: 4.5vw;
+                        }
+    
+                        h3 {
+                            font-size: 2.5vw;
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                            margin-top: -0.5vw;
+                            margin-bottom: -0.5vw;
+                        }
+                    }
+    
+                    .left-dashboard {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        margin-right: 10vw;
+    
+                        h1,
+                        h2,
+                        h3 {
+                            font-size: 3vw;
+                        }
+    
+                    }
+                }
+    
+            }
+    
+            .left-dashboard {
+                width: 50vw;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                flex-wrap: nowrap;
+                align-items: flex-start;
+                margin-left: 3vw;
+                margin-bottom: 5vw;
+                .top-left-dashboard {
+    
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-right: 5vw;
+                    margin-top: 5vw;
+    
+                    h1 {
+                        font-size: 4vw;
+                    }
+                }
+    
+                .down-left-dashboard {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: space-between;
+    
+    
+                    .left-down-left-dashboard {
+                        display: flex;
+                        flex-direction: column;
+    
+                        align-items: center;
+                        margin-left: 2vw;
+    
+                        .top {
+                            margin-top: 4vw;
+                            align-items: center;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+    
+                            h1 {
+                                font-size: 4.5vw;
+                            }
+    
+                            h2 {
+                                font-size: 3vw;
+                            }
+                        }
+    
+                        .mid {
+                            margin-top: 4vw;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            width: 80vw;
+    
+                            .first,
+                            .second,
+                            .third {
+    
+                                h1,
+                                h2 {
+                                    font-size: 3.5vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}

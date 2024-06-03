@@ -1,0 +1,169 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display:none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face{
+  font-family: Roboto;
+  src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.contactUs{
+
+padding: 5vw 0vw;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+
+}
+#message{
+    height: 50vh;
+    width: 80vw;
+    border-radius: 1.4vw;
+    text-align: left;
+    font-family: Georgia;
+    font-size: 1vw;
+    padding: 1vw;
+    border: #179A48 0.1vw solid;
+    margin-bottom: 2vw;
+}
+
+
+#email{
+    height: 10vh;
+    width: 45vw;
+    border-radius: 5vw;
+    padding: 1.5vw;
+    font-family: Georgia;
+    font-size: 1.5vw;
+    border: #179A48 0.1vw solid;
+    
+
+}
+
+.bottom-contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100vw;
+    margin-top: 2vw;
+}
+
+#name{
+    height: 10vh;
+    width: 29vw;
+    border-radius: 5vw;
+    padding: 1.5vw;
+    font-family: Georgia;
+    font-size: 1.5vw;
+    border: #179A48 0.1vw solid;
+
+}
+
+.contact-button{
+    height: 10vh;
+    width: 15vw;
+    background-color: #179A48;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 2vw;
+    border-radius: 5vw;
+    border: none;
+    margin-left: 1vw;
+    
+}
+
+.contact-button:hover{
+    background-color: #FFFFFF;
+    color: #179A48;
+    border: #179A48 0.1vw solid;
+
+}
+
+.contact-button:active{
+    background-color: #f9ee21;
+}
+
+
+@media (max-width:1200px) {
+    #message{
+        font-size: 1.2vw;
+    }
+    #email{
+        height: 8vh;
+        font-size: 1.7vw;
+    }
+
+    #name{
+        height: 8vh;
+        width: 29vw;
+        font-size: 1.7vw;
+    
+    }
+    .contact-button{
+        height: 8vh;
+        
+    }
+}
+
+
+
+@media (max-width:1000px) {
+    #message{
+        font-size: 1.5vw;
+        height: 30vw;
+    }
+    #email{
+        height: 6vh;
+    }
+
+    #name{
+        height: 6vh;
+    
+    }
+    .contact-button{
+        height: 6vh;
+        
+    }
+}
+
+
+@media (max-width:600px) {
+    #message{
+        font-size: 1.5vw;
+    }
+    #email{
+        height: 5vh;
+        font-size: 1.7vw;
+        padding: 2vw;
+    }
+
+    #name{
+        height: 5vh;
+        font-size: 1.7vw;
+        padding: 2vw;
+    
+    }
+    .contact-button{
+        height: 5vh;
+        
+    }
+}

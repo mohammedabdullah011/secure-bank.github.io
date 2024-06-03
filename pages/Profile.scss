@@ -1,0 +1,42 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display: none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.my-profile {
+
+    .content-profile {
+        background-color: $bg-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-items: center;
+        align-items:center;
+        justify-items: center;
+        margin-left: 3vw;
+        flex-wrap: wrap;
+        font-family: Roboto;
+        font-weight: normal;
+        
+        width: 90vw;
+
+        margin-top: 2vw;
+        margin-bottom: 10vw;
+
+    }
+}
+

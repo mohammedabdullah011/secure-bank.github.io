@@ -1,0 +1,126 @@
+$bg-color: #FFFFFF;
+$font-family: Roboto;
+$font-size: 1.3vw;
+$bg-button: #179A48;
+$font-color: #3F3F3F;
+$display: none;
+$hover-color: #05D845;
+$active-color: #f9ee21;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+    font-size: 1.2rem;
+}
+
+.spinner {
+    border: 10px solid rgba(111, 245, 107, 0.1);
+    border-left-color: #45f863; /* Adjust color as needed */
+    border-radius: 50%;
+    width: 3vw; /* Adjust size as needed */
+    height: 3vw; /* Adjust size as needed */
+    animation: spin 1s linear infinite;
+    margin-right: 1vw;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.payment {
+
+    .content-payment-new {
+        background-color: $bg-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin-left: 3vw;
+        
+
+        font-family: Roboto;
+        font-weight: normal;
+        
+        width: 90vw;
+
+        margin-top: 3vw;
+        margin-bottom: 10vw;
+        .right-payment-new{
+            width: 40vw;
+        }
+
+
+        .left-payment-new{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+            margin-left: 10vw;
+            margin-top: 5vw;
+
+        }
+
+
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .payment {
+
+        .content-payment-new {
+            background-color: $bg-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            margin-left: 3vw;
+            
+    
+            font-family: Roboto;
+            font-weight: normal;
+            
+            width: 90vw;
+    
+            margin-top: 3vw;
+            margin-bottom: 10vw;
+            .right-payment-new{
+                width: 85vw;
+                
+            }
+    
+    
+            .left-payment-new{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 70%;
+                margin-left: 10vw;
+                margin-top: 5vw;
+    
+            }
+    
+    
+        }
+    }
+    
+    
+}
